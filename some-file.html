@@ -6,25 +6,7 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>
-      This is an example of how dumb I get sometimes that I push secrets to
-      github
-    </h1>
-    <p>Lets say my secret key is <i>{some secrets that I cannot reveal ;)}</i></p>
-    <h3>
-      So here it is! I have pushed the secrets to my remote git repository.
-    </h3>
-    <h1>A few decades later</h1>
-    <p>
-      Today is the day I realized I might have screwed up. Apparantly a few
-      commits ago, I used my secret key in this file and pushed it to github. I
-      should have used a dummy secret like "{replace it with your actual secret
-      key}"
-    </p>
-    <p>
-      Also, in the mean time, I also get enlighten that I have pushed a file
-      full of secrets that I don't want to share with ANYONE on the internet.
-    </p>
-    <h2>I need to make this wrong</h2>
+   <p>this is my secret key: {replace_with_your_key}</p>
   </body>
 </html>
+<!-- git filter-branch -f --tree-filter "sed -i '' 's/right/{some secrets that I cannot reveal ;)}/g' some-file.html" HEAD -->
